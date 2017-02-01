@@ -21,10 +21,11 @@ table {
 /* Основные стили */
 html {
   background: rgba(255, 255, 255, 1);
+  font-size: 10px;
 }
 
 body {
-  font-family: $helvetica;
+	font-family: 'Aller';
   font-size: 14px;
   line-height: 20px;
 }
@@ -32,4 +33,21 @@ body {
 /* Ссылки без дефолтного подчёркивания */
 a {
   text-decoration: none;
+}
+
+/* Кастомные стили */
+
+/* Обертка 960px */
+.wrapper{
+  width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.line{
+  width:100%;
+  &--dark{
+   background-color: #242424;
+  }
+
 }

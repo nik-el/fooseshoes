@@ -4,27 +4,33 @@
     <title>Fooseshoes</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css?v=a413002c414423a18ce4ba75e3ae8ed2" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="top-header"><a class="logo" href="#">
-          <h1 class="logo__text">Fooseshoes</h1></a>
-        <div class="search"></div>
-        <div class="profile">LOGIN or Register</div>
+    <header class="header">
+      <div class="line line--dark">
+        <div class="top-header wrapper"><a class="logo" href="#">
+            <h1 class="logo__text">Fooseshoes</h1></a>
+          <div class="search">
+            <form class="search__form">
+              <input type="search">
+            </form>
+          </div>
+          <div class="profile">LOGIN or Register</div>
+        </div>
       </div>
-      <div class="nav-header">
+      <div class="nav-header wrapper">
         <nav class="menu">
-          <ul class="menu__links">
-            <li class="menu__link">Home</li>
-            <li class="menu__link">Products</li>
-            <li class="menu__link">About</li>
-            <li class="menu__link">Pages</li>
-            <li class="menu__link">Blog</li>
-            <li class="menu__link">Contact</li>
+          <ul class="menu__items">
+            <li class="menu__item"><a class="menu__link menu__link--selected" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Products</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Pages</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
           </ul>
         </nav>
-        <div class="user-link"></div>
+        <div class="user-info"><a class="user-info__link">30</a><a class="user-info__link">0</a></div>
       </div>
     </header>
     <main>
@@ -88,6 +94,6 @@
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/scripts.js?v=125c54c9a95e472b253d43943d00e347"></script>
   </body>
 </html>

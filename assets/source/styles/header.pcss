@@ -1,0 +1,74 @@
+.header{
+  margin: 0 auto;
+}
+
+
+/*  Верхняя шапка */
+.top-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 10px;
+  height: 45px;
+  background-color: #242424;
+
+}
+
+.logo{
+  &__text{
+    font-family: "Heiti SC";
+    font-size: 2.6rem;
+    color: #57c5a0;
+    text-transform: uppercase;
+  }
+}
+
+.search{
+  width: 630px;
+}
+
+.profile{
+  font-size:1.1rem;
+  color: #7e7e7e;
+}
+
+/* Меню - Нижняя шапка */
+.nav-header{
+  display: flex;
+  justify-content: space-between;
+
+  min-height: 60px;
+
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.menu{
+  &__items {
+    list-style:none;
+    font-size: 0;
+  }
+  &__item{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1.6rem;
+  }
+  &__link{
+    display: block;
+    padding: 25px 23px;
+
+    color:#242424;
+    border-right: 1px solid #eee;
+  }
+
+  &__link--selected{
+    color: #57c5a0;
+  }
+}
+
+.user-info{
+  &__link{
+    padding:25px 23px;
+    display: inline-block;
+    border-left: 1px solid #eee;
+  }
+}
