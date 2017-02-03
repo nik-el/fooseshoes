@@ -33,8 +33,8 @@
 
   &__icon{
     position: absolute;
-    right: 25px;
-    top: 16px;
+    right: 20px;
+    top: 14px;
 
     z-index: 100;
 
@@ -61,6 +61,8 @@
     color: rgba(255,255,255,.5);
 
     cursor: pointer;
+
+    transition: background-color .2s;
   }
 
   &__input:hover{
@@ -86,6 +88,8 @@
     font-size:1.1rem;
     line-height: 4.5rem;
     color: #7e7e7e;
+
+    transition: background-color .2s;
   }
 
   &__link:hover{
@@ -120,6 +124,12 @@
 
     color:#242424;
     border-right: 1px solid #eee;
+
+    transition: color .2s;
+  }
+
+  &__link:hover{
+    color:#57c5a0;
   }
 
   &__link--selected{
@@ -130,10 +140,40 @@
 .user-info{
   display: flex;
 
+  &__icon{
+    position: relative;
+    top: 2px;
+  }
+
   &__link{
     padding: 20px 23px;
     min-width: 90px;
     height: 60px;
     border-left: 1px solid #eee;
   }
+
+  &__link:hover &__count{
+    background-color: #57c5a0;
+  }
+
+  &__count {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1px;
+    margin-left: 2px;
+
+    min-height: 20px;
+    min-width: 20px;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    text-align: center;
+    color: #fff;
+    background-color: #adadad;
+
+    border-radius: 4px;
+  }
+
+
 }
