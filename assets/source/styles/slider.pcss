@@ -1,31 +1,70 @@
 .slider{
+  position: relative;
   display: flex;
   justify-content: flex-end;
-
   margin: 0 auto;
   min-height: 460px;
 
+  &__img{
+  position: absolute;
+  top:-111px;
+  left:-228px;
+  z-index:1;
+  }
+
   &__information{
+    position: relative;
     width: 390px;
-    margin-top: 70px;
     margin-right: 40px;
+    margin-top: 70px;
+    z-index: 10;
+
   }
   &__title{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 290px;
     font-weight: 300;
     font-size: 4rem;
     line-height: 4rem;
   }
 
   &__text{
+    margin-bottom: 15px;
     font-weight: 300;
     font-size: 2rem;
     line-height: 2.5rem;
+
   }
+
+  &__action{
+    display: flex;
+  }
+  &__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 2px;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: #fff;
+  }
+
+  &__icon:hover .icon-svg {
+  fill: #57c5a0;
+  }
+}
+
+.icon-svg{
+  fill: #6e6e6e;
+  transition: fill .1s;
 }
 
 .slides{
   display: flex;
-
   min-height: 90px;
 }
 
