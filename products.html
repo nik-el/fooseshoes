@@ -4,7 +4,7 @@
     <title>Fooseshoes</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="assets/css/style.css?v=df9d98f496ec9c43be4dc85a8cbc2272" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -12,11 +12,14 @@
         <div class="top-header wrapper"><a class="logo" href="#">
             <h1 class="logo__text">Fooseshoes</h1></a>
           <div class="search">
+            <svg class="search__icon" width="14" height="14">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
+            </svg>
             <form class="search__form">
-              <input type="search">
+              <input class="search__input" type="text">
             </form>
           </div>
-          <div class="profile">LOGIN or Register</div>
+          <div class="profile"><a class="profile__link" href="#">LOGIN or Register</a></div>
         </div>
       </div>
       <div class="nav-header wrapper">
@@ -30,7 +33,13 @@
             <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
           </ul>
         </nav>
-        <div class="user-info"><a class="user-info__link">30</a><a class="user-info__link">0</a></div>
+        <div class="user-info"><a class="user-info__link" href="#">30
+            <svg width="16" height="16">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use>
+            </svg></a><a class="user-info__link" href="#">0
+            <svg width="16" height="16">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+            </svg></a></div>
       </div>
     </header>
     <main>
@@ -102,7 +111,7 @@
         </div>
       </footer>
       <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-      <script src="assets/js/scripts.js?v=125c54c9a95e472b253d43943d00e347"></script>
+      <script src="assets/js/scripts.js"></script>
     </div>
   </body>
 </html>
