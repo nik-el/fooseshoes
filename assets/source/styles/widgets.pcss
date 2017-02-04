@@ -1,15 +1,16 @@
 .widgets{
   display: flex;
+  position: relative;
 }
 
 .widget{
 
-  width:260px;
-  margin: 50px 40px 20px 0px;
+  width:250px;
+  margin: 50px 50px 20px 0px;
 
 
   &__title{
-    margin-bottom: 25px;
+    margin-bottom: 16px;
 
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -20,11 +21,32 @@
 
   &__text{
       text-align: justify;
-      
+
     	font-style: italic;
       font-size: 1.2rem;
       line-height: 1.8rem;
 
       color: #a4a4a4;
+  }
+}
+
+.tweet{
+  margin-bottom: 10px;
+  &__text{
+    margin-bottom: 7px;
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+
+    color: #a4a4a4;
+
+
+    &--link{
+      color: #57c5a0;
+    }
+
+    &--date{
+      color: #c4c5bf;
+    }
   }
 }
