@@ -4,7 +4,7 @@
     <title>Fooseshoes</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="assets/css/style.css?v=f3f3d8f97a22c36ae0b90fd80ac3e884" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -104,12 +104,34 @@
           <div class="subscribe">
             <form class="subscribe__form">
               <label>
-                <input class="subscribe__field" type="email" name="email">
+                <input class="subscribe__field" type="email" name="email" placeholder="Enter email for newsletter" required>
+              </label>
+              <label>
                 <button class="subscribe__btn" type="submit">Подписаться</button>
+                <div class="subscribe__arrow">
+                  <svg class="icon-svg icon-svg--dark" width="7" height="12">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow"></use>
+                  </svg>
+                </div>
               </label>
             </form>
           </div>
-          <div class="social"><a class="social__link"></a><a class="social__link"></a><a class="social__link"></a><a class="social__link"></a><a class="social__link"></a></div>
+          <div class="social"><a class="social__link" href="#">
+              <svg class="icon-social" width="9" height="19">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
+              </svg></a><a class="social__link" href="#">
+              <svg class="icon-social" width="19" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+              </svg></a><a class="social__link" href="#">
+              <svg class="icon-social" width="19" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-google"></use>
+              </svg></a><a class="social__link" href="#">
+              <svg class="icon-social" width="18" height="19">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-leakedin"></use>
+              </svg></a><a class="social__link" href="#">
+              <svg class="icon-social" width="19" height="9">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-flickr"></use>
+              </svg></a></div>
         </div>
       </div>
     </main>
@@ -127,7 +149,7 @@
         </div>
       </footer>
       <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-      <script src="assets/js/scripts.js?v=d41d8cd98f00b204e9800998ecf8427e"></script>
+      <script src="assets/js/scripts.js"></script>
     </div>
   </body>
 </html>

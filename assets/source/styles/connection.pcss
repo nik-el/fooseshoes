@@ -1,19 +1,91 @@
 .connection{
   display: flex;
   justify-content: space-between;
+
+  padding-top: 35px;
 }
 
 .subscribe{
+
+  position: relative;
   margin-bottom: 45px;
+
 
   width: 250px;
   height: 35px;
-  background: #fff;
+
+
+  &__field{
+    padding: 0px 15px;
+    width: 215px;
+    height: 35px;
+
+    font-size: 1.2rem;
+    line-height:3.5rem;
+    font-style: italic;
+
+    border:0;
+    color: #7d7d7d;
+    background-color: #2e2e2e;
+    outline: none;
+  }
+    /* Скрываю подсказку в поле ввода по клику */
+  &__field:focus::-webkit-input-placeholder {
+  color: transparent
+}
+  &__field:focus::-moz-placeholder {
+  color: transparent
+}
+  &__field:focus:-moz-placeholder {
+  color: transparent
+}
+  &__field:focus:-ms-input-placeholder {
+  color: transparent
+}
+
+  &__btn{
+    display: none;
+  }
+
+  &__arrow{
+    position: absolute;
+    top:0;
+    right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+
+    background-color: #7d7d7d;
+    transition: background-color .2s;
+    cursor: pointer;
+  }
+
+    &__arrow:hover{
+    background-color: #57c5a0;
+    }
 }
 
 
 .social{
+  display: flex;
   width: 250px;
   height: 35px;
-  background: #fff;
+
+  &__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+    margin-left: 8px;
+    background-color: #2e2e2e;
+
+  }
+
+  &__link:hover .icon-social{
+    fill: #57c5a0;
+  }
 }
