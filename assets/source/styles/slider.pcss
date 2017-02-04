@@ -1,3 +1,4 @@
+/* Окно слайдера */
 .slider{
   position: relative;
   display: flex;
@@ -58,20 +59,25 @@
   }
 }
 
-.icon-svg{
-  fill: #6e6e6e;
-  transition: fill .1s;
-}
+
+/*  Переключение слайдов */
 
 .slides{
   display: flex;
+  justify-content: space-between;
   min-height: 90px;
+
+  padding: 0px;
 }
 
 .slide{
-  padding: 30px 44px 20px;
+  position: relative;
+  width: 100%;
+  padding-top: 30px;
   text-align: center;
   line-height: 2.5rem;
+
+  cursor: pointer;
 
   &__title{
     font-size: 1.8rem;
@@ -82,4 +88,53 @@
     font-size: 1.2rem;
     color: #adadad;
   }
+}
+
+.slide::before{
+  position: absolute;
+  display: block;
+  content:'';
+  height: 6px;
+  width: 180px;
+
+  top: 8px;
+  background-color: #000;
+
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-right: 8px solid #000;
+  border-left: 8px solid #000;
+
+  transition: background-color .2s;
+}
+
+.slide:hover::before{
+  background-color: #303030;
+}
+
+
+.slide--active::before,
+.slide--active:hover::before{
+
+  background-color: #57c5a0;
+}
+
+
+
+.slide::after{
+  position: absolute;
+  display: block;
+  content:'';
+  height: 4px;
+  width: 0px;
+
+  top: 10px;
+  left:1px;
+
+  border:1px solid #2e2e2e;
+}
+
+.slide:first-of-type::after{
+  display: none;
+
 }
