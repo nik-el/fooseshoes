@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: center;
   min-height: 230px;
+
+  &__link:hover .special__text{
+  background-color: rgba(36,36,36,.7);
+  }
 }
 
 .special{
@@ -15,6 +19,18 @@
 
   background-color: #fff;
 
+  &--sale{
+    background: url('../img/on_sale.jpg');
+  }
+
+  &--offers{
+    background: url('../img/special_offers.jpg');
+  }
+
+  &--have{
+    background: url('../img/must_have.jpg');
+  }
+
   &__text{
     padding: 20px 40px;
 
@@ -26,5 +42,6 @@
     color: #fff;
 
     background-color: rgba(36,36,36,.9);
+    transition: background-color .2s;
   }
 }

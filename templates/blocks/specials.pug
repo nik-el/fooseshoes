@@ -1,8 +1,11 @@
 div.line.line--dark
   div.specials.wrapper
-    div.special
-      p.special__text On sale
-    div.special
-      p.special__text Special offers
-    div.special
-      p.special__text Must have
+    a(href="#").specials__link
+      div.special.special--sale
+        p.special__text On sale
+    a(href="#").specials__link
+      div.special.special--offers
+        p.special__text Special offers
+    a(href="#").specials__link
+      div.special.special--have
+        p.special__text Must have
