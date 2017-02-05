@@ -1,31 +1,187 @@
 div.line.line--darkgrey
-  div.filters.wrapper
-    form.filters__form
-      p.filters__text Shop by
-      div.filters__wrapper
-        select(name="brands").filters__field
+  div.shop-by.wrapper
+    form.shop-by__form
+      p.shop-by__text Shop by
+      div.shop-by__wrapper
+        select(name="brands").shop-by__field
           option(hidden disabled selected) Brands
           option(value='brand1') Brand 1
           option(value='brand2') Brand 2
           option(value='brand3') Brand 3
           option(value='brand4') Brand 4
-        svg(width='14' height='14').filters__icon
+        svg(width='14' height='14').shop-by__icon
           use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-select")
-      div.filters__wrapper
-        select(name="brands").filters__field
+      div.shop-by__wrapper
+        select(name="brands").shop-by__field
           option(hidden disabled selected) Categories
           option(value='cat1') Categories 1
           option(value='cat2') Categories 2
           option(value='cat3') Categories 3
           option(value='cat4') Categories 4
-        svg(width='14' height='14').filters__icon
+        svg(width='14' height='14').shop-by__icon
           use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-select")
-      div.filters__wrapper
-        select(name="brands").filters__field
+      div.shop-by__wrapper
+        select(name="brands").shop-by__field
           option(hidden disabled selected) Price
           option(value='price1') Price 1
           option(value='price2') Price 2
           option(value='price3') Price 3
           option(value='price4') Price 4
-        svg(width='14' height='14').filters__icon
+        svg(width='14' height='14').shop-by__icon
           use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-select")
+div.div.line.line--lightgrey
+  section.products.wrapper
+    div.products__text
+      p.products__title All Products
+      ol.products__breadcrumbs.breadcrumbs
+        li.breadcrumbs__item
+          a(href='index.html').breadcrumbs__link Home
+        li.breadcrumbs__item
+          a(href='products.html').breadcrumbs__link All Products
+      div.filter-list
+        p.filter-list__text View as
+        p.filter-list__btn.btn
+          svg(width='15' height='15')
+            use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-bigthumb")
+        p.filter-list__btn.btn
+          svg(width='15' height='15')
+              use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-smallthumb")
+      div.sorting-list
+        select(name="brands").sorting-list__field.btn
+          option(hidden disabled selected) Sort alphabetically
+          option(value='sort1') Sort 1
+          option(value='sort2') Sort 2
+          option(value='sort3') Sort 3
+          option(value='sort4') Sort 4
+        svg(width='14' height='14').sorting-list__icon
+          use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-select-sort")
+    div.cards
+      a(href="#").cards__link
+        article.cards__item.cards__item--1
+          p.cards__price.price $145,99
+          div.cards__text Even&Odd
+          div.cards__icons
+            div.icons
+              p.icons__link
+                svg.icon-svg(width='16' height='10')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-eye")
+              p.icons__link
+                svg.icon-svg(width='16' height='16')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-star")
+              p.icons__link
+                svg.icon-svg(width='16' height='13')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-share")
+              p.icons__link
+                svg.icon-svg(width='16' height='15')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-buy")
+      a(href="#").cards__link
+        article.cards__item.cards__item--2
+          p.cards__price.price $145,99
+          p.cards__sale.on-sale On sale!
+          div.cards__text Even&Odd
+          div.cards__icons
+            div.icons
+              p.icons__link
+                svg.icon-svg(width='16' height='10')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-eye")
+              p.icons__link
+                svg.icon-svg(width='16' height='16')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-star")
+              p.icons__link
+                svg.icon-svg(width='16' height='13')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-share")
+              p.icons__link
+                svg.icon-svg(width='16' height='15')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-buy")
+      a(href="#").cards__link
+        article.cards__item.cards__item--3
+          p.cards__price.price $145,99
+          div.cards__text Even&Odd
+          div.cards__icons
+            div.icons
+              p.icons__link
+                svg.icon-svg(width='16' height='10')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-eye")
+              p.icons__link
+                svg.icon-svg(width='16' height='16')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-star")
+              p.icons__link
+                svg.icon-svg(width='16' height='13')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-share")
+              p.icons__link
+                svg.icon-svg(width='16' height='15')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-buy")
+      a(href="#").cards__link
+        article.cards__item.cards__item--4
+          p.cards__price.price $145,99
+          div.cards__text Even&Odd
+          div.cards__icons
+            div.icons
+              p.icons__link
+                svg.icon-svg(width='16' height='10')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-eye")
+              p.icons__link
+                svg.icon-svg(width='16' height='16')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-star")
+              p.icons__link
+                svg.icon-svg(width='16' height='13')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-share")
+              p.icons__link
+                svg.icon-svg(width='16' height='15')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-buy")
+      a(href="#").cards__link
+        article.cards__item.cards__item--5
+          p.cards__price.price $145,99
+          div.cards__text Even&Odd
+          div.cards__icons
+            div.icons
+              p.icons__link
+                svg.icon-svg(width='16' height='10')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-eye")
+              p.icons__link
+                svg.icon-svg(width='16' height='16')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-star")
+              p.icons__link
+                svg.icon-svg(width='16' height='13')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-share")
+              p.icons__link
+                svg.icon-svg(width='16' height='15')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-buy")
+      a(href="#").cards__link
+        article.cards__item.cards__item--6
+          p.cards__price.price $145,99
+          p.cards__stock.out-stock Out of stock
+          div.cards__text Even&Odd
+          div.cards__icons
+            div.icons
+              p.icons__link
+                svg.icon-svg(width='16' height='10')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-eye")
+              p.icons__link
+                svg.icon-svg(width='16' height='16')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-star")
+              p.icons__link
+                svg.icon-svg(width='16' height='13')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-share")
+              p.icons__link
+                svg.icon-svg(width='16' height='15')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-buy")
+      a(href="#").cards__link
+        article.cards__item.cards__item--6
+          p.cards__price.price $145,99
+          p.cards__stock.out-stock Out of stock
+          div.cards__text Even&Odd
+          div.cards__icons
+            div.icons
+              p.icons__link
+                svg.icon-svg(width='16' height='10')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-eye")
+              p.icons__link
+                svg.icon-svg(width='16' height='16')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-star")
+              p.icons__link
+                svg.icon-svg(width='16' height='13')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-share")
+              p.icons__link
+                svg.icon-svg(width='16' height='15')
+                  use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-buy")

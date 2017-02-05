@@ -2,21 +2,23 @@
   position:relative;
   min-height: 500px;
   padding-top: 30px;
-  padding-bottom: 17px;
+  padding-bottom: 1px;
 
   &__text{
     display:flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 22px;
 
     font-size: 2.5rem;
     font-weight: 300;
+  }
 
+  &__breadcrumbs{
+    flex-grow:1;
   }
   &__title{
-    margin-top: 8px;
-    margin-left: -3px;
+    margin: 8px 17px 0px -3px;
     font-size: 2.5rem;
     font-weight: 300;
 
@@ -33,7 +35,6 @@
   }
 }
 
-
 .cards{
   display: flex;
   flex-direction: row;
@@ -43,10 +44,10 @@
 
   &__link{
     display: block;
-    margin: 0px 20px 20px 0px;
+    margin: 0px 20px 17px 0px;
   }
 
-  &__link:nth-of-type(3){
+  &__link:nth-of-type(3n){
     margin-right: 0px;
   }
 
@@ -144,8 +145,4 @@
     opacity: 0;
     transition: opacity 0.2s;
   }
-
-
-
-
 }

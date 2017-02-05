@@ -1,0 +1,36 @@
+header.header
+  div.line.line--dark
+    div.top-header.wrapper
+      a(href='index.html').logo
+        h1.logo__text Fooseshoes
+      div.search
+        svg(width='14' height='14').search__icon
+          use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-search")
+        form.search__form
+          input(type='text').search__input
+      div.profile
+        a(href="#").profile__link LOGIN or Register
+  div.nav-header.wrapper
+    nav.menu
+      ul.menu__items
+        li.menu__item
+          a(href='index.html').menu__link Home
+        li.menu__item
+          a(href='products.html').menu__link.menu__link--selected Products
+        li.menu__item
+          a(href='#').menu__link About
+        li.menu__item
+          a(href='#').menu__link Pages
+        li.menu__item
+          a(href='#').menu__link Blog
+        li.menu__item
+          a(href='#').menu__link Contact
+    div.user-info
+      a(href='#').user-info__link
+        svg(width='16' height='16').user-info__icon
+          use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-star")
+        p.user-info__count 30
+      a(href='#').user-info__link
+        svg(width='16' height='17').user-info__icon
+          use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-cart")
+        p.user-info__count 0

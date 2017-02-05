@@ -160,9 +160,9 @@ a {
 
 /* Кнопка */
 .btn{
-  display: inline-block;
-  vertical-align: top;
-  padding: 0px 20px;
+  display: flex;
+  align-content:center;
+  align-items:center;
   height: 30px;
 
   font-size: 1.4rem;
@@ -205,4 +205,35 @@ display: flex;
 &__link:hover .icon-svg {
   fill: #57c5a0;
 }
+}
+
+/* Хлебные крошки */
+
+.breadcrumbs{
+  font-size: 0;
+  font-weight: 700;
+  list-style:none;
+  color: #bcb5a7;
+
+  &__item{
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 1.2rem;
+  }
+
+  &__item::after{
+    content:' \00A0  >  \00A0';
+  }
+
+  &__item:last-child::after{
+    content:'';
+  }
+
+  &__link{
+    color: #bcb5a7;
+    transition: opacity .2s;
+  }
+  &__link:hover{
+  opacity: .6;
+  }
 }
