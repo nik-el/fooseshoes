@@ -1,10 +1,18 @@
 .information{
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 
-  padding-top: 26px;
   padding-bottom: 25px;
+  &::after{
+    position:absolute;
+    content:'';
+    top:-26px;
+    width: 940px;
+    height: 1px;
+    border-bottom: 1px solid #bcb5a7;
+  }
 
   &__item{
     min-height: 186px;
@@ -17,7 +25,6 @@
     margin-bottom: 10px;
     font-size: 1.4rem;
     font-weight: 700;
-
     text-transform: uppercase;
   }
 
@@ -30,7 +37,6 @@
       margin-bottom: 0px;
     }
   }
-
   &__item:last-of-type{
     width: 460px;
   }

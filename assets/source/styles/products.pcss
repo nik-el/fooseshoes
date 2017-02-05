@@ -2,8 +2,12 @@
   position:relative;
   min-height: 500px;
   padding-top: 30px;
-  padding-bottom: 1px;
+  padding-bottom: 45px;
 
+
+  &--shop{
+  padding-bottom: 15px;
+  }
   &__text{
     display:flex;
     justify-content: flex-start;
@@ -22,6 +26,7 @@
   &__breadcrumbs{
     flex-grow:1;
   }
+
   &__title{
     margin: 8px 17px 0px -3px;
     font-size: 2.5rem;
@@ -30,14 +35,7 @@
     color: #242424;
   }
 
-  &::after{
-    position:absolute;
-    content:'';
-    bottom:0;
-    width: 940px;
-    height: 1px;
-    border-bottom: 1px solid #bcb5a7;
-  }
+
 
   &__btn{
     display: block;
@@ -51,7 +49,7 @@
   flex-direction: row;
   flex-wrap: wrap;
 
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 
   &__link{
     display: block;
