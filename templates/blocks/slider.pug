@@ -1,8 +1,31 @@
+input(type="radio" id="sld-1" name="toogle" checked hidden)
+input(type="radio" id="sld-2" name="toogle" hidden)
+input(type="radio" id="sld-3" name="toogle" hidden)
+input(type="radio" id="sld-4" name="toogle" hidden)
+input(type="radio" id="sld-5" name="toogle" hidden)
 div.line.line--grey-bg
   div.slider.wrapper
     div.slider__information
-      p.slider__price.price $14,99
+      p.slider__price.price $145,99
       h2.slider__title Pink Shoes 2013 Collection
+      p.slider__text
+        | Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..
+      div.icons
+        p.icons__link
+          svg.icon-svg(width='16' height='10')
+            use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-eye")
+        p.icons__link
+          svg.icon-svg(width='16' height='16')
+            use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-star")
+        p.icons__link
+          svg.icon-svg(width='16' height='13')
+            use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-share")
+        p.icons__link
+          svg.icon-svg(width='16' height='15')
+            use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-buy")
+    div.slider__information
+      p.slider__price.price $145,99
+      h2.slider__title Anna Field 2001 Collection
       p.slider__text
         | Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..
       div.icons
@@ -20,18 +43,18 @@ div.line.line--grey-bg
             use(xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href="#icon-buy")
 div.line.line--darkgrey
   div.slides.wrapper
-    div.slide.slide--active
+    label(for="sld-1").slide
       p.slide__title Pink Shoes
       p.slide__text Now at $145,99
-    div.slide
+    label(for="sld-2").slide
       p.slide__title Anna Field
       p.slide__text Limited Edition
-    div.slide
+    label(for="sld-3").slide
       p.slide__title Prada
       p.slide__text Summer is coming
-    div.slide
+    label(for="sld-4").slide
       p.slide__title Casadei
       p.slide__text All Colors avaiable
-    div.slide
+    label(for="sld-5").slide
       p.slide__title Mellow Yellow
       p.slide__text Free delivery

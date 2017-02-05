@@ -2,9 +2,8 @@
 <html>
   <head>
     <title>Fooseshoes</title>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="assets/css/style.css?v=a6f956eec7304b25089367a12ee9123d" rel="stylesheet">
+    <meta charset="utf-8" lang="en">
+    <link href="assets/css/style.css" rel="stylesheet">
   </head>
   <body>
     <svg display="none">
@@ -111,11 +110,43 @@
       </div>
     </header>
     <main>
+      <input type="radio" id="sld-1" name="toogle" checked hidden>
+      <input type="radio" id="sld-2" name="toogle" hidden>
+      <input type="radio" id="sld-3" name="toogle" hidden>
+      <input type="radio" id="sld-4" name="toogle" hidden>
+      <input type="radio" id="sld-5" name="toogle" hidden>
       <div class="line line--grey-bg">
         <div class="slider wrapper">
           <div class="slider__information">
-            <p class="slider__price price">$14,99</p>
+            <p class="slider__price price">$145,99</p>
             <h2 class="slider__title">Pink Shoes 2013 Collection</h2>
+            <p class="slider__text">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
+            <div class="icons">
+              <p class="icons__link">
+                <svg class="icon-svg" width="16" height="10">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-eye"></use>
+                </svg>
+              </p>
+              <p class="icons__link">
+                <svg class="icon-svg" width="16" height="16">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use>
+                </svg>
+              </p>
+              <p class="icons__link">
+                <svg class="icon-svg" width="16" height="13">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-share"></use>
+                </svg>
+              </p>
+              <p class="icons__link">
+                <svg class="icon-svg" width="16" height="15">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-buy"></use>
+                </svg>
+              </p>
+            </div>
+          </div>
+          <div class="slider__information">
+            <p class="slider__price price">$145,99</p>
+            <h2 class="slider__title">Anna Field 2001 Collection</h2>
             <p class="slider__text">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
             <div class="icons">
               <p class="icons__link">
@@ -144,26 +175,26 @@
       </div>
       <div class="line line--darkgrey">
         <div class="slides wrapper">
-          <div class="slide slide--active">
+          <label class="slide" for="sld-1">
             <p class="slide__title">Pink Shoes</p>
             <p class="slide__text">Now at $145,99</p>
-          </div>
-          <div class="slide">
+          </label>
+          <label class="slide" for="sld-2">
             <p class="slide__title">Anna Field</p>
             <p class="slide__text">Limited Edition</p>
-          </div>
-          <div class="slide">
+          </label>
+          <label class="slide" for="sld-3">
             <p class="slide__title">Prada</p>
             <p class="slide__text">Summer is coming</p>
-          </div>
-          <div class="slide">
+          </label>
+          <label class="slide" for="sld-4">
             <p class="slide__title">Casadei</p>
             <p class="slide__text">All Colors avaiable</p>
-          </div>
-          <div class="slide">
+          </label>
+          <label class="slide" for="sld-5">
             <p class="slide__title">Mellow Yellow</p>
             <p class="slide__text">Free delivery</p>
-          </div>
+          </label>
         </div>
       </div>
       <div class="line line--dark">
@@ -425,11 +456,11 @@
               </label>
               <label>
                 <button class="subscribe__btn" type="submit">Подписаться</button>
-                <div class="subscribe__arrow">
+                <p class="subscribe__arrow">
                   <svg class="icon-svg icon-svg--dark" width="7" height="12">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow"></use>
                   </svg>
-                </div>
+                </p>
               </label>
             </form>
           </div>
@@ -466,7 +497,7 @@
         </div>
       </footer>
       <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-      <script src="assets/js/scripts.js?v=d41d8cd98f00b204e9800998ecf8427e"></script>
+      <script src="assets/js/scripts.js"></script>
     </div>
   </body>
 </html>

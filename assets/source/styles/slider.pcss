@@ -1,6 +1,4 @@
 /* Окно слайдера */
-
-
 .slider{
   position: relative;
   display: flex;
@@ -18,7 +16,7 @@
   }
 
   &__information{
-    display: flex;
+    display: none;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -30,6 +28,10 @@
     margin-right: 40px;
     margin-top: 55px;
     z-index: 10;
+
+    &--none{
+      opacity: 0;
+    }
 
     &--short{
     flex-direction: row;
@@ -55,6 +57,78 @@
   }
 }
 
+
+/* Переключене слайдов */
+#sld-1:checked ~ .line .slider__information:nth-of-type(1) {
+  display: block;
+}
+#sld-1:checked ~ .line .slide:nth-of-type(1)::before{
+  color: rgba(255,255,255,1);
+  background-color: #57c5a0;
+}
+#sld-1:checked ~ .line .slide:nth-of-type(1) .slide__title{
+  color: rgba(255,255,255,1);
+}
+#sld-1:checked ~ .line .slide:nth-of-type(1) .slide__text{
+  color: rgba(173,173,173,1);
+}
+
+
+#sld-2:checked ~ .line .slider__information:nth-of-type(2) {
+  display: block;
+}
+#sld-2:checked ~ .line .slide:nth-of-type(2)::before{
+  color: rgba(255,255,255,1);
+  background-color: #57c5a0;
+}
+#sld-2:checked ~ .line .slide:nth-of-type(2) .slide__title{
+  color: rgba(255,255,255,1);
+}
+#sld-2:checked ~ .line .slide:nth-of-type(2) .slide__text{
+  color: rgba(173,173,173,1);
+}
+
+#sld-3:checked ~ .line .slider__information:nth-of-type(3) {
+  display: block;
+}
+#sld-3:checked ~ .line .slide:nth-of-type(3)::before{
+  color: rgba(255,255,255,1);
+  background-color: #57c5a0;
+}
+#sld-3:checked ~ .line .slide:nth-of-type(3) .slide__title{
+  color: rgba(255,255,255,1);
+}
+#sld-3:checked ~ .line .slide:nth-of-type(3) .slide__text{
+  color: rgba(173,173,173,1);
+}
+
+#sld-4:checked ~ .line .slider__information:nth-of-type(4) {
+  display: block;
+}
+#sld-4:checked ~ .line .slide:nth-of-type(4)::before{
+  color: rgba(255,255,255,1);
+  background-color: #57c5a0;
+}
+#sld-4:checked ~ .line .slide:nth-of-type(4) .slide__title{
+  color: rgba(255,255,255,1);
+}
+#sld-4:checked ~ .line .slide:nth-of-type(4) .slide__text{
+  color: rgba(173,173,173,1);
+}
+
+#sld-5:checked ~ .line .slider__information:nth-of-type(5) {
+  display: block;
+}
+#sld-5:checked ~ .line .slide:nth-of-type(5)::before{
+  color: rgba(255,255,255,1);
+  background-color: #57c5a0;
+}
+#sld-5:checked ~ .line .slide:nth-of-type(5) .slide__title{
+  color: rgba(255,255,255,1);
+}
+#sld-5:checked ~ .line .slide:nth-of-type(5) .slide__text{
+  color: rgba(173,173,173,1);
+}
 
 /* Стили для короткого слайдера (products.html) */
 /*
