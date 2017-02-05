@@ -24,6 +24,7 @@
   &__text{
     font-family: "Heiti SC";
     font-size: 2.6rem;
+    font-weight: 300;
     color: #57c5a0;
     text-transform: uppercase;
   }
@@ -100,15 +101,15 @@
   }
 }
 
+
+
 /* Меню - Нижняя шапка */
+
 .nav-header{
   display: flex;
   justify-content: space-between;
 
   height: 60px;
-
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
 }
 
 .menu{
@@ -120,15 +121,22 @@
     display: inline-block;
     vertical-align: top;
     font-size: 1.6rem;
+    line-height: 2.5rem;
+
+    border-right: 1px solid #eee;
   }
   &__link{
     display: block;
-    padding: 20px 23px;
+    padding: 20px 23px 15px 23px;
 
     color:#242424;
-    border-right: 1px solid #eee;
+
 
     transition: color .2s;
+  }
+
+  &__item:first-of-type{
+    border-left: 1px solid #eee;
   }
 
   &__link:hover{
@@ -154,7 +162,9 @@
     height: 60px;
     border-left: 1px solid #eee;
   }
-
+  &__link:last-of-type{
+    border-right: 1px solid #eee;
+  }
   &__link:hover &__count{
     background-color: #57c5a0;
   }

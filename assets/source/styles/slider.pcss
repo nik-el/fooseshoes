@@ -1,4 +1,6 @@
 /* Окно слайдера */
+
+
 .slider{
   position: relative;
   display: flex;
@@ -6,12 +8,6 @@
   margin: 0 auto;
   min-height: 460px;
 
-  &__img{
-  position: absolute;
-  top:-111px;
-  left:-228px;
-  z-index:1;
-  }
 
   &__information{
     position: relative;
@@ -23,7 +19,7 @@
   }
   &__title{
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     width: 290px;
     font-weight: 300;
     font-size: 4rem;
@@ -60,20 +56,26 @@
   text-align: center;
   line-height: 2.5rem;
 
+  color: rgba(255,255,255,.5);
+
   cursor: pointer;
 
   &__title{
+    margin-bottom: -3px;
     font-size: 1.8rem;
-    color: #fff;
+    font-weight: 300;
+
+
   }
 
   &__text{
+    margin-top: -6px;
     font-size: 1.2rem;
-    color: #adadad;
+    color: rgba(173,173,173,.5);
   }
-}
 
-.slide::before{
+
+&::before{
   position: absolute;
   display: block;
   content:'';
@@ -91,18 +93,28 @@
   transition: background-color .2s;
 }
 
-.slide:hover::before{
+&:hover::before{
   background-color: #303030;
 }
 
 
-.slide--active::before,
-.slide--active:hover::before{
+&--active::before,
+&--active:hover::before{
+  color: rgba(255,255,255,1);
   background-color: #57c5a0;
 }
 
+&--active &__title{
+  color: rgba(255,255,255,1);
+}
+&--active &__text{
+    color: rgba(173,173,173,1);
+}
 
-.slide::after{
+
+
+
+&::after{
   position: absolute;
   display: block;
   content:'';
@@ -115,7 +127,8 @@
   border:1px solid #2e2e2e;
 }
 
-.slide:first-of-type::after{
+&:first-of-type::after{
   display: none;
 
+}
 }

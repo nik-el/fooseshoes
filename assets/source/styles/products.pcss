@@ -1,8 +1,9 @@
 .products{
+  position:relative;
   min-height: 500px;
   padding-top: 30px;
-  padding-bottom: 45px;
-  border-bottom: 1px solid #bcb5a7;
+  padding-bottom: 17px;
+
   &__text{
     display:flex;
     justify-content: space-between;
@@ -14,13 +15,24 @@
 
   }
   &__title{
-    margin-top: 10px;
+    margin-top: 8px;
+    margin-left: -3px;
     font-size: 2.5rem;
     font-weight: 300;
 
     color: #242424;
   }
+
+  &::after{
+    position:absolute;
+    content:'';
+    bottom:0;
+    width: 940px;
+    height: 1px;
+    border-bottom: 1px solid #bcb5a7;
+  }
 }
+
 
 .cards{
   display: flex;

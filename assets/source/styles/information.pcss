@@ -3,17 +3,18 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  padding-top: 45px;
-  padding-bottom: 23px;
+  padding-top: 26px;
+  padding-bottom: 25px;
 
   &__item{
-    padding: 30px 25px 30px 15px;
+    min-height: 186px;
+    padding: 30px 25px 0px 15px;
     background-color: rgba(0,0,0,.05);
     width: 220px;
   }
 
   &__title{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 1.4rem;
     font-weight: 700;
 
@@ -21,8 +22,13 @@
   }
 
   &__text{
+    margin-bottom: 4px;
     font-size: 1.2rem;
     line-height: 1.6rem;
+    &--author{
+      font-style: italic;
+      margin-bottom: 0px;
+    }
   }
 
   &__item:last-of-type{
@@ -34,9 +40,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-left: 46px;
-  margin-bottom:14px;
-
+  margin: 3px 0px 8px 46px;
+  padding-top: 8px;
   &__date{
     position: absolute;
     left: -45px;
