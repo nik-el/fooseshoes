@@ -68,6 +68,13 @@ a {
     background-color: #ebebe7;
   }
 
+  &--grey-bgshort{
+    background:url('../img/pink_shoes.png') no-repeat;
+    background-position: -59px -275px;
+    background-origin: border-box;
+    background-color: #ebebe7;
+  }
+
   &--darkgrey{
     background-color: #2e2e2e;
   }
@@ -93,7 +100,7 @@ a {
   font-size: 1.3rem;
   text-align:center;
   word-break: break-all;
-  
+
   color: #fff;
   background-color: #57c5a0;
 }
@@ -178,7 +185,10 @@ a {
 .icons{
 display: flex;
 
-&__link{
+  &--none{
+    display: none;
+  }
+  &__link{
   display: flex;
   justify-content: center;
   align-items: center;

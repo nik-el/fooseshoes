@@ -4,7 +4,7 @@
     <title>Fooseshoes</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="assets/css/style.css?v=b913145b40f00821dcb5f607fb181619" rel="stylesheet">
+    <link href="assets/css/style.css?v=8cad25cb65ca85acdff4481ff65c6adf" rel="stylesheet">
   </head>
   <body>
     <svg display="none">
@@ -56,6 +56,10 @@
       <symbol viewBox="0 0 19 8" id="icon-flickr">
         <path d="M15.203,7.816 C12.996,7.816 11.207,6.069 11.207,3.914 C11.207,1.758 12.996,0.011 15.203,0.011 C17.411,0.011 19.200,1.758 19.200,3.914 C19.200,6.069 17.411,7.816 15.203,7.816 ZM3.986,7.816 C1.778,7.816 -0.011,6.069 -0.011,3.914 C-0.011,1.758 1.778,0.011 3.986,0.011 C6.193,0.011 7.982,1.758 7.982,3.914 C7.982,6.069 6.193,7.816 3.986,7.816 Z" style="fill-rule: evenodd;"></path>
       </symbol>
+      <!-- select-->
+      <symbol viewBox="0 0 14 14" id="icon-select">
+        <path d="M7.000,0.000 C3.134,0.000 0.000,3.134 0.000,7.000 C0.000,10.866 3.134,14.000 7.000,14.000 C10.866,14.000 14.000,10.866 14.000,7.000 C14.000,3.134 10.866,0.000 7.000,0.000 ZM10.836,6.414 L7.733,9.586 C7.730,9.590 7.729,9.595 7.725,9.599 L7.485,9.844 C7.352,9.980 7.178,10.047 7.003,10.046 C6.828,10.047 6.654,9.980 6.522,9.844 L6.281,9.599 C6.277,9.595 6.276,9.590 6.273,9.585 L3.170,6.414 C2.904,6.144 2.904,5.705 3.170,5.434 L3.409,5.190 C3.674,4.918 4.104,4.918 4.368,5.190 L7.003,7.882 L9.638,5.190 C9.902,4.918 10.332,4.918 10.597,5.190 L10.836,5.434 C11.102,5.705 11.102,6.144 10.836,6.414 Z" style="fill: #fff; fill-rule: evenodd;"></path>
+      </symbol>
     </svg>
     <header class="header">
       <div class="line line--dark">
@@ -95,6 +99,80 @@
       </div>
     </header>
     <main>
+      <div class="line line--grey-bgshort">
+        <div class="slider slider--short wrapper">
+          <div class="slider__information slider__information--short">
+            <p class="slider__price price">$145,99</p>
+            <h2 class="slider__title">Pink Shoes 2013 Collection</h2>
+            <p class="slider__text">Nunc non fermentum nunc. Sed ut ante eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..</p>
+            <div class="icons icons--none">
+              <p class="icons__link">
+                <svg class="icon-svg" width="16" height="10">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-eye"></use>
+                </svg>
+              </p>
+              <p class="icons__link">
+                <svg class="icon-svg" width="16" height="16">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-star"></use>
+                </svg>
+              </p>
+              <p class="icons__link">
+                <svg class="icon-svg" width="16" height="13">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-share"></use>
+                </svg>
+              </p>
+              <p class="icons__link">
+                <svg class="icon-svg" width="16" height="15">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-buy"></use>
+                </svg>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line line--darkgrey">
+        <div class="filters wrapper">
+          <form class="filters__form">
+            <p class="filters__text">Shop by</p>
+            <div class="filters__wrapper">
+              <select class="filters__field" name="brands">
+                <option hidden disabled selected>Brands</option>
+                <option value="brand1">Brand 1</option>
+                <option value="brand2">Brand 2</option>
+                <option value="brand3">Brand 3</option>
+                <option value="brand4">Brand 4</option>
+              </select>
+              <svg class="filters__icon" width="14" height="14">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-select"></use>
+              </svg>
+            </div>
+            <div class="filters__wrapper">
+              <select class="filters__field" name="brands">
+                <option hidden disabled selected>Categories</option>
+                <option value="cat1">Categories 1</option>
+                <option value="cat2">Categories 2</option>
+                <option value="cat3">Categories 3</option>
+                <option value="cat4">Categories 4</option>
+              </select>
+              <svg class="filters__icon" width="14" height="14">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-select"></use>
+              </svg>
+            </div>
+            <div class="filters__wrapper">
+              <select class="filters__field" name="brands">
+                <option hidden disabled selected>Price</option>
+                <option value="price1">Price 1</option>
+                <option value="price2">Price 2</option>
+                <option value="price3">Price 3</option>
+                <option value="price4">Price 4</option>
+              </select>
+              <svg class="filters__icon" width="14" height="14">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-select"></use>
+              </svg>
+            </div>
+          </form>
+        </div>
+      </div>
       <div class="line line--lightgrey">
         <div class="information wrapper">
           <div class="information__item">
