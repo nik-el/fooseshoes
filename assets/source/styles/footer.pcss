@@ -28,9 +28,22 @@
   display: inline-block;
   vertical-align: top;
   font-size: 1.2rem;
+  line-height: 2.5rem;
   }
 
   &__link{
     color: rgba(255,255,255,.5);
+  }
+
+  &__link:hover{
+    color: rgba(255,255,255,.3);
+  }
+
+  &__item::after{
+    content:' \00A0 / \00A0';
+  }
+
+  &__item:last-of-type::after{
+    content:'';
   }
 }
