@@ -1,0 +1,200 @@
+/* Обертка 960px */
+.wrapper{
+  width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* Фоновый цвет блоков */
+.line{
+  width:100%;
+  &--dark{
+    background-color: #242424;
+  }
+  &--dark-hr{
+    background-color: #242424;
+    border-bottom: 1px solid #1c1c1c;
+  }
+
+  &--grey{
+    background-color: #ebebe7;
+  }
+
+  &--grey-bg{
+    background:url('../img/pink_shoes.png') no-repeat;
+    background-position: -59px -104px;
+    background-origin: border-box;
+    background-color: #ebebe7;
+  }
+
+  &--grey-bgshort{
+    background:url('../img/pink_shoes.png') no-repeat;
+    background-position: -59px -275px;
+    background-origin: border-box;
+    background-color: #ebebe7;
+  }
+
+  &--darkgrey{
+    background-color: #2e2e2e;
+  }
+
+  &--lightgrey{
+    background-color: #ebe7df;
+  }
+
+}
+
+/* Значок цены */
+.price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align:center;
+  word-break: break-all;
+
+  color: #fff;
+  background-color: #57c5a0;
+}
+
+/* Значок «on sale» */
+.on-sale{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 70px;
+  height: 70px;
+
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align:center;
+  line-height:70px;
+  text-transform: uppercase;
+
+  color: #fff;
+  background-color: #242424;
+}
+
+/* */
+.out-stock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align:center;
+  line-height:1.5rem;
+  text-transform: uppercase;
+
+  color: #fff;
+  background-color: #f27e4b;
+}
+
+/* Заливка svg */
+.icon-svg{
+  fill: #6e6e6e;
+  transition: fill .2s;
+}
+
+.icon-svg--dark{
+  fill: #2e2e2e;
+}
+
+.icon-social{
+  fill: #7d7d7d;
+  transition: fill .2s;
+}
+
+/* Кнопка */
+.btn{
+  display: flex;
+  align-content:center;
+  align-items:center;
+  height: 30px;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 3rem;
+
+
+  color: #bcb5a7;
+  border: 1px solid #bcb5a7;
+
+  cursor: pointer;
+  transition: opacity .2s;
+
+  &--active{
+    border: 1px solid #898170;
+  }
+}
+
+.btn:hover{
+  opacity: .6;
+}
+
+/* Группа иконок */
+.icons{
+display: flex;
+
+  &--none{
+    display: none;
+  }
+  &__link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 2px;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: #fff;
+
+  cursor: pointer;
+}
+&__link:hover .icon-svg {
+  fill: #57c5a0;
+}
+}
+
+/* Хлебные крошки */
+
+.breadcrumbs{
+  font-size: 0;
+  font-weight: 700;
+  list-style:none;
+  color: #bcb5a7;
+
+  &__item{
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 1.2rem;
+  }
+
+  &__item::after{
+    content:' \00A0  >  \00A0';
+  }
+
+  &__item:last-child::after{
+    content:'';
+  }
+
+  &__link{
+    color: #bcb5a7;
+    transition: opacity .2s;
+  }
+  &__link:hover{
+  opacity: .6;
+  }
+}
