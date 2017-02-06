@@ -7,7 +7,6 @@
   min-height: 460px;
 
   &--short{
-
   min-height: 260px;
   }
 
@@ -152,12 +151,33 @@
 
   cursor: pointer;
 
+  &::before{
+    position: absolute;
+    display: block;
+    content:'';
+    height: 6px;
+    max-width: 176px;
+    width: 100%;
+
+    top: 8px;
+    background-color: #000;
+
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-right: 8px solid #000;
+    border-left: 8px solid #000;
+
+    transition: background-color .2s;
+  }
+
+  &:last-of-type::before{
+    right: 0px;
+  }
+
   &__title{
     margin-bottom: -3px;
     font-size: 1.8rem;
     font-weight: 300;
-
-
   }
 
   &__text{
@@ -166,24 +186,6 @@
     color: rgba(173,173,173,.5);
   }
 
-
-&::before{
-  position: absolute;
-  display: block;
-  content:'';
-  height: 6px;
-  width: 180px;
-
-  top: 8px;
-  background-color: #000;
-
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-  border-right: 8px solid #000;
-  border-left: 8px solid #000;
-
-  transition: background-color .2s;
-}
 
 &:hover::before{
   background-color: #303030;
